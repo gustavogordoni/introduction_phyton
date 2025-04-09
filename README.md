@@ -354,7 +354,7 @@ print(frutas[-2])  # Imprime "banana"
 print(frutas[-3])  # Imprime "maçã"
 ```
 
-#### eMétodos de listas
+#### Métodos de listas
 
 * append(elemento): adiciona um elemento ao final da lista.
 * insert(indice, elemento): insere um elemento em uma posição específica da lista.
@@ -701,9 +701,9 @@ lista = [1, 2, 3]
 print(lista[3])  # O índice 3 está fora do intervalo
 ```
 
-## 6.1. Manejo de exceções
+### 6.1. Manejo de exceções
 
-### **Try**
+#### **Try**
 
 Contém o código que pode gerar uma exceção. Se ocorrer uma exceção dentro do bloco try, o fluxo de execução é transferido para o bloco except correspondente.
 
@@ -716,7 +716,7 @@ except ZeroDivisionError:
     print("Erro: Divisão por zero")
 ```
 
-### **Except**
+#### **Except**
 
 Especifica o tipo de exceção que se deseja capturar e lidar. Pode haver múltiplos blocos
 except para lidar com diferentes tipos de exceções.
@@ -732,7 +732,7 @@ except ValueError:
     print("Erro: Valor inválido")
 ```
 
-### **Finally**
+#### **Finally**
 
 É opcional e é executado sempre, independentemente de ter ocorrido uma exceção ou não.
 
@@ -747,7 +747,7 @@ finally:
     arquivo.close()  # Fechar o arquivo sempre, mesmo se ocorrer uma exceção
 ```
 
-## 6.2. Exceções personalizadas
+### 6.2. Exceções personalizadas
 
 Para criar uma exceção personalizada, deve-se criar uma classe que herde da classe base Exception ou de uma de suas subclasses.
 
@@ -768,7 +768,7 @@ except Exception as e:
 
 Permitm interagir com o usuário e manipular arquivos. Possibilita solicitar informações, mostrar resultados e ler/escrever dados em arquivos externos.
 
-### **Entrada de dados do usuário**
+## **Entrada de dados do usuário**
 
 **input():** Esta função mostra uma mensagem na tela e espera que o usuário insira um valor.
 
@@ -791,7 +791,7 @@ else:
     print("Você é menor de idade.")
 ```
 
-### **Saída de dados**
+## **Saída de dados**
 
 **print():** recebe um ou mais argumentos e os mostra no console.
 
@@ -804,11 +804,11 @@ idade = 25
 print(f"Olá, meu nome é {nome} e tenho {idade} anos.")
 ```
 
-## 7.1. Leitura e escrita de arquivos
+### 7.1. Leitura e escrita de arquivos
 
 É possível abrir arquivos em diferentes modos, como leitura ("r"), escrita ("w") ou anexar ("a"), e realizar operações de leitura e escrita.
 
-### **Leitura de arquivos**
+#### **Leitura de arquivos**
 
 Deve ser utilizado a função **open()** em modo de **leitura ("r")**. Para ler o conteúdo do arquivo, utiliza-se métodos como **read()** ou **readlines()**.
 
@@ -819,7 +819,7 @@ print(conteudo)
 arquivo.close()
 ```
 
-### **Escrita de arquivos**
+#### **Escrita de arquivos**
 
 Deve ser aberto em modo de **escrita ("w")** utilizando a função **open()**. Se o arquivo não existir, será criado automaticamente. Se o arquivo já existir, seu conteúdo será sobrescrito.
 
@@ -880,7 +880,7 @@ data_atual = datetime.datetime.now()
 print(data_atual)  # Imprime a data e hora atual
 ```
 
-## 8.1. Criação de módulos próprios
+### 8.1. Criação de módulos próprios
 
 Para criar um módulo personalizado, deve ser criado um novo arquivo Python e com a definição das funções, classes e variáveis desejadas.
 
@@ -904,7 +904,7 @@ resultado = meu_modulo.calcular_soma(5, 3)
 print(resultado)  # Imprime 8
 ```
 
-# 8.2. Pacotes
+### 8.2. Pacotes
 
 Maneira de organizar módulos relacionados em uma estrutura hierárquica de diretórios. Permitem agrupar módulos relacionados e evitar conflitos de nomes entre módulos.
 
