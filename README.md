@@ -1,4 +1,4 @@
-# Anotações: Curso de Python - Santander
+# Anotações: Curso de Python
 
 ## **1. Conceitos básicos da sintaxe em Python**
 
